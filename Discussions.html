@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussions</title>
+</head>
+
+<!--Permanent Font & Text Properties-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }   
+    
+ html{
+    scroll-behavior: smooth;
+ }
+
+ header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 225px;
+    transition: 0.5s ease;
+    background-color: rgba(250, 238, 238, 0.214);
+    backdrop-filter: blur(8px);
+ }
+
+ header .game{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease;
+    border: 2px solid transparent;
+    padding: 2px 10px;
+ }
+
+ header .game:hover{
+   color: #E24040;
+   border: 2px solid rgba(230, 49, 49, 0.866);
+   transition: 1s ease;
+ }
+
+ header .navigation{
+    position: relative;
+ }
+
+ header .navigation .nav-bar a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Discussion{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Discussion:hover{
+    color: #E24040;
+    transition: 1s ease;
+ }
+
+ header .navigation .nav-bar .Discussion:before{
+    content:'';
+    position: absolute;
+    background: #E24040;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+
+ header .navigation .nav-bar a:before{
+    content:'';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+ header .navigation .nav-bar a:hover:before{
+    width: 100%;
+ }
+
+ section{
+    padding: 100px 200px;
+ }
+
+ .home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    background-color: #000;
+ }
+
+ .home2{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    background-color: #000;
+ }
+
+ .home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ }
+
+ .home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.home2 .content2{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.home .content h1{
+   font-size: 4em;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 75px;
+   margin-bottom: 40px;
+}
+
+.home2 .content2 h2 span{
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+.home video{
+   z-index: 000;
+   object-fit: cover;
+   position: sticky;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   filter: brightness(75%);
+}
+
+table, th, td{
+    border: 3px solid white;
+    text-align: center;
+    background-color: #E24040;
+    padding: 5px 5px;
+}
+
+.home .equipment{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.home2 .content2 a{
+    background: #fff;
+    border: 2px solid aqua;
+    padding: 15px 35px;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.5s ease;
+}
+
+.home2 .content2 a:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+</style>
+
+<body>
+    <header>
+        <a href="#" class="game">Lethal Company</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="Discussions.html" class="Discussion">Discussion</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="References.html">References</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="vid1" src="Lethal Company - Zapgun.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1>Tools.<br><span>Equipment</span></h1>
+            <p>In Lethal Company, your survival equipment is detrimental to the mission. Without them, your odds of surviving and making the quota are slim. So be sure to purchase with you profits and choose the right equipment that would help you in your scavenging missions.</p><br>
+            <hr>
+            <br>
+        </div>
+            <br>
+        
+        <!--Table of Equipment-->
+        <table class="equipment">
+            <tr>
+                <th colspan="3"><b>Table of Equipment and Expenses</b></th>
+            </tr>
+            <th><i>Equipment</i></th>
+            <th><i>How It Works</i></th>
+            <th><i>Cost</i></th>
+                <tr>
+                    <td>Flashlight</td>
+                    <td>A simple way to navigate in the dark. It will drain power fast.</td>
+                    <td>15 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Pro-Flashlight</td>
+                    <td>A heavier flashlight that covers a wider area. Also requires power to work.</td>
+                    <td>60 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Walkie-Talkie</td>
+                    <td>Must-have gear for communication between the team. It requires power to work, and it can also be used as a lure for creatures.</td>
+                    <td>12 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Boombox</td>
+                    <td>Simply a boombox to play music. It’s the perfect distraction tool to keep certain things in one place. Also good for you if you get lost while traversing the area. Does need power to operate.</td>
+                    <td>60 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Extension Ladder</td>
+                    <td>A box that holds a deployable ladder. You don’t just climb with it, you can use it to cross wide gaps that’d otherwise kill you.</td>
+                    <td>60 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Key</td>
+                    <td>You can find a key during any mission to unlock any door. It’s destroyed after use though.</td>
+                    <td>Not Purchasable</td>
+                </tr>
+
+                <tr>
+                    <td>Jet-pack</td>
+                    <td>A powered jet-pack that can get you across gaps. Great for cool points, but terrible for speed.</td>
+                    <td>700 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Laser Pointer</td>
+                    <td>Needs power to work, and it can be used to point toward a specific area. Much weaker than a normal flashlight</td>
+                    <td>Not Purchasable</td>
+                </tr>
+
+                <tr>
+                    <td>Lockpicker</td>
+                    <td>It’s an automated lock pick that you attach to a door. Perfect if you lack keys, but be prepared to lug the massive thing around.</td>
+                    <td>20 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Radar Booster</td>
+                    <td>Used by whoever is on the ship, they can ping it and help crewmates find their way back.</td>
+                    <td>50 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>TZP-Inhalant</td>
+                    <td>A mix of helium and space amphetamines. Gives you speed, but more importantly, makes you sound hilarious.</td>
+                    <td>120 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Shovel</td>
+                    <td>It’s a shovel. Swing it and make sure your aim is true.</td>
+                    <td>30 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Stop Sign</td>
+                    <td>A stop sign. A normal stop sign that you swing and hope for the best. Similar to the shovel.</td>
+                    <td>Not Purchasable</td>
+                </tr>
+
+                <tr>
+                    <td>Stun Grenade</td>
+                    <td>A grenade that will stun most monsters, freeing you to escape.</td>
+                    <td>40 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Zap Gun</td>
+                    <td>A taser that needs power. Can auto-lock creatures and electrocute them until you stop it or it runs out of power.</td>
+                    <td>400 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Loud Horn</td>
+                    <td>It’s a ridiculously loud horn. Blow it to help your lost friends make it back to the ship.</td>
+                    <td>150 Credits</td>
+                </tr>
+                
+                <tr>
+                    <td>Inverse Teleporter</td>
+                    <td>Teleports anyone living or otherwise into the facility. The location is random, and they’ll drop their weapons.</td>
+                    <td>425 Credits</td>
+                </tr>
+
+                <tr>
+                    <td>Teleporter</td>
+                    <td>Used from the console, target a player (or corpse) to transfer them to the ship. They will drop all their items.</td>
+                    <td>400 Credits</td>
+                </tr>
+        </table>
+    </section>
+<hr>
+    <section class="home2">
+        <div class="content2">
+            <h2><span>Suggestions</span></h2>
+            <br>
+            <br>
+            <p>Of all the survival equipment in Lethal Company, you want to get the Pro-Flashlight as soon as possible. It clicks on and off faster to help save power and react faster to incoming danger.</p><br>
+            <p>As for the Walkie-Talkie, communication is key in the game if you’re playing with others. More so if someone is left behind to keep an eye on the team on the console.</p><br>
+            <p>Specialized Lethal Company equipment focuses on helping you make that quota and keeping you alive. In some cases, like with the Boombox discussed below, you’ll need a solid strategy to use it correctly.</p><br>
+            <p>Using the right specialized Lethal Company equipment can make the mission quicker. The faster you finish, the better your chances of nailing that quota. Sometimes, speed is the most important factor. For instance, it pays to find keys rather than carrying the Lockpicker if it’ll slow you down.</p><br>
+            <p>The Company wouldn’t send you in completely defenseless. They have a funny way of showing you support. That’s why your selection of offensive equipment in Lethal Company is amusing at best. Still, they get the job done.</p><br>
+            <p>In contrast to other horror games, the weapons in Lethal Company are entertaining to use. If you’re in a group, work together with different weapons. One can stun while others beat the creatures down. If using the grenade, please throw it before it’s too late.</p><br>
+            <p>Ship upgrades have pros and cons. The Loud Horn can tell everyone else it’s time to go, but it can attract monsters. A Teleporter is incredibly useful to get people back fast if you don’t mind dropping items.</p><br>
+            <br>
+
+        <a href="#">Return to Top</a>
+        </div>
+    </section>
+</body>
+</html>

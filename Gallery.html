@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+
+<!--Permanent Font & Text Properties-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }   
+    
+ html {
+   scroll-behavior: smooth;
+ }
+
+ header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 225px;
+    transition: 0.5s ease;
+    background-color: rgba(250, 238, 238, 0.214);
+    backdrop-filter: blur(8px);
+ }
+
+ header .game{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease;
+    border: 2px solid transparent;
+    padding: 2px 10px;
+ }
+
+ header .game:hover{
+   color: #E24040;
+   border: 2px solid rgba(230, 49, 49, 0.866);
+   transition: 1s ease;
+ }
+
+ header .navigation{
+    position: relative;
+ }
+
+ header .navigation .nav-bar a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Home{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Home:hover{
+    color: #E24040;
+    transition: 1s ease;
+ }
+
+ header .navigation .nav-bar .Home:before{
+    content:'';
+    position: absolute;
+    background: #E24040;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+
+ header .navigation .nav-bar a:before{
+    content:'';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+ header .navigation .nav-bar a:hover:before{
+    width: 100%;
+ }
+
+ img{
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+ header .navigation .nav-bar .Gallery{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Gallery:hover{
+    color: #E24040;
+    transition: 1s ease;
+ }
+
+ header .navigation .nav-bar .Gallery:before{
+    content:'';
+    position: absolute;
+    background: #E24040;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+
+ section{
+    padding: 100px 200px;
+ }
+
+ .home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    background-color: #000;
+ }
+
+ .home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ }
+
+ .home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+ .home .content h1{
+   font-size: 4em;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 75px;
+   margin-bottom: 40px;
+}
+
+.home .content h1 span{
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+table, th, td{
+    border: 3px solid white;
+    text-align: center;
+}
+
+.home .picture{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+</style>
+
+<body>
+    <header>
+        <a href="#" class="game">Lethal Company</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="Discussions.html">Discussion</a>
+                <a href="Gallery.html" class="Gallery">Gallery</a>
+                <a href="References.html">References</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="vid1" src="Lethal Company - Entity.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1>Game.<br><span>Gallery</span></h1><br>
+            <hr>
+        </div>
+            <br>
+
+        <!--Table of Gallery-->
+        <table class="picture">
+            <tr>
+                <td><img src="Lethal Company - Baboon Hawk.png"></td>
+                <td><img src="Lethal Company - Bracken.png"></td>
+                <td><img src="Lethal Company - Bunker Spider.png"></td>
+                <td><img src="Lethal Company - Circuit Bee.png"></td>
+                <td><img src="Lethal Company - Coil-Head.png"></td>
+            </tr>
+
+            <tr>
+                <td><img src="Lethal Company - Earth Leviathan.png"></td>
+                <td><img src="Lethal Company - Eyeless Dog.png"></td>
+                <td><img src="Lethal Company - Forest Keeper.png"></td>
+                <td><img src="Lethal Company - Ghost Girl.png"></td>
+                <td><img src="Lethal Company - Hoarding Bug.png"></td>
+            </tr>
+
+            <tr>
+                <td><img src="Lethal Company - Hygrodere.png"></td>
+                <td><img src="Lethal Company - Jeb.png"></td>
+                <td><img src="Lethal Company - Jester.png"></td>
+                <td><img src="Lethal Company - Snare Flea.png"></td>
+                <td><img src="Lethal Company - Spore Lizard.png"></td>
+            </tr>
+
+            <tr>
+                <td><img src="Lethal Company - Thumper.png"></td>
+                <td><img src="Lethal Company - Explore 1.png"></td>
+                <td><img src="Lethal Company - Explore 2.png"></td>
+                <td><img src="Lethal Company - Explore 3.png"></td>
+                <td><img src="Lethal Company - Explore 4.png"></td>
+            </tr>
+
+            <tr>
+                <td><img src="Lethal Company - Explore 5.png"></td>
+                <td><img src="Lethal Company - Explore 6.png"></td>
+                <td><img src="Lethal Company - Explore 7.png"></td>
+                <td><img src="Lethal Company - Explore 8.png"></td>
+                <td><img src="Lethal Company - Explore 9.png"></td>
+            </tr>
+            <br>
+    </section>
+</body>
+</html>

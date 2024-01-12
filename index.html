@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lethal Company</title>
+</head>
+
+<!--Permanent Font & Text Properties-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }   
+
+ html {
+   scroll-behavior: smooth;
+ }
+
+ li{
+   margin-left: 20px;
+ }
+
+ header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 225px;
+    transition: 0.5s ease;
+    background-color: rgba(250, 238, 238, 0.214);
+    backdrop-filter: blur(8px);
+ }
+
+ header .game{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease;
+    border: 2px solid transparent;
+    padding: 2px 10px;
+ }
+
+ header .game:hover{
+   color: #E24040;
+   border: 2px solid rgba(230, 49, 49, 0.866);
+   transition: 1s ease;
+ }
+
+ header .navigation{
+    position: relative;
+ }
+
+ header .navigation .nav-bar a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Home{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease
+ }
+
+ header .navigation .nav-bar .Home:hover{
+    color: #E24040;
+    transition: 1s ease;
+ }
+
+ header .navigation .nav-bar .Home:before{
+    content:'';
+    position: absolute;
+    background: #E24040;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+
+ header .navigation .nav-bar a:before{
+    content:'';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+ }
+ header .navigation .nav-bar a:hover:before{
+    width: 100%;
+ }
+
+ section{
+    padding: 100px 200px;
+ }
+
+ .home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    background-color: #000;
+ }
+
+ .home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ }
+
+ .home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+ .home .content .quote{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+
+.home .content h1{
+   font-size: 4em;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 75px;
+   margin-bottom: 40px;
+}
+
+.home .content h1 span{
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+.home .content h2 span{
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+.home .content h3 span{
+   font-size: 1.4em;
+   font-weight: 600;
+}
+
+.home .content h4 span{
+   font-size: 1.6em;
+   font-weight: 600;
+}
+
+.home .content h5 span{
+   font-size: 2em;
+   font-weight: 600;
+}
+
+.home .content h6 span{
+   font-size: 2.5em;
+   font-weight: 600;
+}
+
+.home .content h7 span{
+   font-size: 1.6em;
+   font-weight: 600;
+}
+
+.home .content h8 span{
+   font-size: 1.6em;
+   font-weight: 600;
+}
+
+.home .content .p{
+   margin-bottom: 65px;
+}
+
+.home .content a{
+    background: #fff;
+    border: 2px solid aqua;
+    padding: 15px 35px;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.5s ease;
+}
+
+.home .content a:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.home video{
+   z-index: 000;
+   object-fit: cover;
+   position: sticky;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   filter: brightness(75%);
+}
+
+</style>
+
+
+<!--Basic Information about Topic-->
+<body style="background-color: #808080;">
+    <header>
+        <a href="#" class="game">Lethal Company</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="nav-bar">
+                <a href="index.html" class="Home">Home</a>
+                <a href="Discussions.html">Discussion</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="References.html">References</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="vid1" src="Lethal Company - Official Trailer (1080p60).mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1>About.<br><span>Game</span></h1>
+            <p>Lethal Company is a co-operative horror game for up to four players. As employees of a mysterious Company, your job is to travel to remote and dangerous moons where you and your crewmates will collect scrap and carry it back to your ship to later sell at Company headquarters. Be sure to meet your quota before the deadline!</p><br>
+            <p><b>The developer describe this content as:</b></p>
+            <blockquote cite="https://store.steampowered.com/app/1966720/Lethal_Company/" class="quote"><i>The game has a realistic atmosphere. Player characters can die through various means, some involving dismemberment or decapitation. Player characters can use fictional medical drugs recklessly.</i></blockquote>
+            <figcaption>- Zeekers,
+               <cite>Lethal Company</cite>
+            </figcaption>
+            <br>
+            <hr>
+            <br>
+            <h2><span>Game Setting</span></h2><br>
+            <p>This is where the horror kicks into play, because the scrap you need is all hidden inside abandoned buildings on the surface of the moons. While you can easily meet the first couple of quotas without venturing too far inside, eventually the amount required will necessitate fully exploring areas.</p><br>
+            <hr>
+            <br>
+            <h3><span>Varying Dangers</span></h3><br>
+            <p>Enemies ranging from random wildlife, to automatons, to outright eldritch horrors roam the halls of these buildings, and if given the opportunity they'll try to end your treasure hunting spree. Some make their presence obvious, while others are much sneakier. Some are minor nuisances, while others spell instant doom.</p><br>
+            <hr>
+            <br>
+            <h4><span>Increasing Difficulty</span></h4><br>
+            <p>On top of that, monsters become more prevalent throughout the day, adding an additional risk/reward element where staying longer can net you more treasure, but result in your death. The thrill of the game is to live for as long as you can while meeting the profit quota.</p><br>
+            <hr>
+            <br>
+            <h5><span>Meeting Quota</span></h5><br>
+            <p>In Lethal Company, the quota is the minimum amount of scrap you and your teammates need to collect to appease the company and help it meet its profit requirements. It’s the amount you need to sell to avoid losing and having to start over again. You have three days!</p><br>
+            <hr>
+            <br>
+            <h6><span>Failed Quota</span></h6><br>
+            <p>If your collected and sold scrap does not equal to the desired quota, then you will be fired and sent to space! Do not leave any trace of leftovers, remember you are also running on a time limit each day other than the deadline.
+            </p><br>
+            <hr>
+            <br>
+            <h7><span>Console Terminal</span></h7>
+            <br>
+            <br>
+            <ol type="1" color="white">
+               <li>Choose which moon to land on each day. There may be a transport fee to pay, depending on where you want to go.</li>
+                  <ul type="square" color="white">
+                     <li><i>More distant moons are generally more hazardous and more expensive.</i></li>
+                     <li><i>Keep an eye out for weather/condition modifiers, as they will also make your work day more dangerous.</i></li>
+                  </ul>
+               <li>Spend your company credits on equipment, including flashlights, walkie-talkies, and weapons.</li>
+                  <ul type="square" color="white">
+                     <li><i>The purchased equipment will arrive as an airdrop to your current moon a short time after purchase - don't miss it!</i></li>
+                  </ul>
+               <li>Examine your wildlife records to learn about the creatures you've encountered</li>
+               <li>Switch which player the ship monitor screen will follow. The ship monitor screen displays a top-down view following one player at a time. You can see any hazards in their vicinity highlighted in red, and even disable them:</li>
+                  <ul type="square" color="white">
+                     <li><i>Turrets and Landmines are labelled with a code - type this code into the console to temporarily disable them.</i></li>
+                     <li><i>Locked doors are also labelled with a code - type Open [Code] into the console to open them.</i></li>
+                  </ul>
+               <li>Scan for information on the scrap that's left on the planet</li>
+            </ol>
+            <br>
+            <hr>
+            <br>
+            <h8><span>Achieve Teamwork</span></h8>
+            <br>
+            <br>
+            <p>You aren’t completely helpless against the enemies patrolling the hallways of these areas. Your ship comes complete with a computer that can be used to monitor the surroundings of any one player at a time, including enemies and treasure, they can help guide and warn their teammates.</p><br>
+            <p>Speaking of walkie talkies, they lead into the most interesting element of the game. The audio conversation feature in Lethal Company is restricted to what you might reasonably hear without any enhancements. Player voices have limited range, you will no longer be able to communicate once you pass away.</p><br>
+            <p>Lethal Company offers a simple yet strategically deep experience in scrap collecting. Decisions must be made regarding team roles and inventory allocation to maximize efficiency. Choosing between equipping everyone with weapons or assigning someone to monitor cameras poses trade-offs between safety and reward. Alternatively, individuals can independently collect scrap.</p><br>
+            <p>Playing alone is not the best choice, as gamers almost completely lose their chance to survive. The absence of a team and its support makes it impossible to stay on the planet. There will be no teammates to monitor the map and notify others about scrap, enemies, or mines.</p><br>
+            <br>
+            <br>
+
+            <p><b>Official Trailer:</b></p><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m5RB0Ej1mFg?si=SGc7NCj4kfC8eazm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+            <br>
+            <p><b>Company Address of Valve/Steam:</b></p><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1632.639576201801!2d-122.20081033737306!3d47.61415216035275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c87b4e2f915%3A0x7d3508c77858df2b!2s10400%20NE%204th%20St%2C%20Bellevue%2C%20WA%2098004%2C%20USA!5e0!3m2!1sen!2sph!4v1701604735207!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <br>
+         <a href="#">Return to Top</a>
+         </div>
+    </section>
+</body>
+</html>
